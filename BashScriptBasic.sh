@@ -1,4 +1,4 @@
-#basic bash_script coding - 1 
+#1 - basic bash_script coding - 1 
 echo "hello bash script world";
 
 if [ "$name" == "Gozde" ]; then 
@@ -7,7 +7,7 @@ else
 echo "my name is not Gozde";
 fi
 
-#get user input and check if the number is positive, negative, or zero
+#2 - get user input and check if the number is positive, negative, or zero
 echo "Please enter a number: "
 read num
 
@@ -18,3 +18,12 @@ elif [ $num -lt 0 ]; then
 else
   echo "$num is zero"
 fi
+
+#3 - list files and directories
+echo "Files in this directory:"
+ls
+
+#4 - using function
+function greet() {
+  echo "Hello bash world!"
+}
